@@ -44,3 +44,63 @@ Sentences are split and preprocessed into training and test sets.
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
+
+## Setup
+
+Set your API keys (for OpenAI and Hugging Face) in the environment variables or directly inside the script.
+
+Choose your preferred approach:
+- **Multi-Agent Approach**: Uses CrewAI workflows with agents and tasks.
+- **Fine-Tuning Approach**: Fine-tunes and evaluates a language model on your data.
+
+---
+
+## Requirements
+
+- Python 3.10+
+
+**Libraries:**
+- `langchain`
+- `crewai`
+- `openai`
+- `faiss-cpu`
+- `transformers`
+- `datasets`
+- `trl`
+- `peft`
+- `accelerate`
+- `scikit-learn`
+- `matplotlib`
+- `ipywidgets`
+- `bitsandbytes`
+
+(See `requirements.txt` for the full dependency list.)
+
+---
+
+## Results
+
+The system reports classification metrics including:
+- **Accuracy**
+- **Precision**
+- **Recall**
+- **F1-score**
+
+Both the agent-based approach and the fine-tuned model demonstrate strong performance in identifying procedural sentences.
+
+---
+
+## Future Work
+
+- Further specialization of agent roles and task decomposition.
+- Fine-tuning larger or domain-specific models for enhanced performance.
+- Integrating explainability modules for better understanding of decisions.
+- Expanding the dataset with more diverse procedural instructions.
+
+---
+
+## Credits
+
+Developed by [Your Name Here].  
+Inspired by CrewAI and recent advances in lightweight fine-tuning techniques (QLoRA) for large language models.
+
