@@ -45,11 +45,9 @@ Sentences are split and preprocessed into training and test sets.
    ```bash
    pip install -r requirements.txt
 
-## Setup
+2. Set your API keys (for OpenAI and Hugging Face) in the environment variables or directly inside the script.
 
-Set your API keys (for OpenAI and Hugging Face) in the environment variables or directly inside the script.
-
-Choose your preferred approach:
+3. Choose your preferred approach:
 - **Multi-Agent Approach**: Uses CrewAI workflows with agents and tasks.
 - **Fine-Tuning Approach**: Fine-tunes and evaluates a language model on your data.
 
@@ -101,6 +99,6 @@ Both the agent-based approach and the fine-tuned model demonstrate strong perfor
 
 ## Credits
 
-Developed by [Your Name Here].  
+Developed by Nasim Bayat Chaleshtari .  
 Inspired by CrewAI and recent advances in lightweight fine-tuning techniques (QLoRA) for large language models.
 
